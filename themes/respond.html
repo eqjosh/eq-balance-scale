@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>React vs Respond Balance Scale — Six Seconds</title>
+  <meta name="description" content="Explore the balance between reacting and responding in your life. A free interactive tool by Six Seconds." />
+  <meta property="og:title" content="React vs Respond Balance Scale" />
+  <meta property="og:description" content="Explore the balance between reacting and responding in your life." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div id="scale-app"></div>
+  <script type="module">
+    import { BalanceScale } from '/src/scale.js';
+    import { getTheme } from '/src/themes.js';
+
+    const theme = getTheme('respond');
+    new BalanceScale(document.getElementById('scale-app'), theme);
+  </script>
+</body>
+</html>

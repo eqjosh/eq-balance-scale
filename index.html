@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EQ Balance Scale — Six Seconds</title>
+  <meta name="description" content="An interactive balance scale to explore emotional intelligence. Drag items to discover what drains and supports your wellbeing." />
+  <meta property="og:title" content="EQ Balance Scale — Six Seconds" />
+  <meta property="og:description" content="An interactive balance scale to explore emotional intelligence." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div id="scale-app"></div>
+  <script type="module">
+    import { BalanceScale } from '/src/scale.js';
+    import { getThemeFromURL } from '/src/themes.js';
+
+    const theme = getThemeFromURL();
+    new BalanceScale(document.getElementById('scale-app'), theme);
+  </script>
+</body>
+</html>

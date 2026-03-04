@@ -1,0 +1,19 @@
+{
+  "name": "eq-balance-scale",
+  "version": "1.0.0",
+  "description": "Interactive EQ Balance Scale by Six Seconds",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "animejs": "^3.2.2",
+    "sortablejs": "^1.15.6",
+    "html-to-image": "^1.11.11"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}
