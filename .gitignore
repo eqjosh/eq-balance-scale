@@ -2,3 +2,6 @@ node_modules/
 dist/
 .DS_Store
 .claude/
+
+# Claude Code local settings (may contain command history with secrets)
+**/.claude/settings.local.json
